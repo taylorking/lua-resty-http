@@ -153,7 +153,7 @@ function _M.connect(self, ...)
 
     self.keepalive = true
 
-    return sock:connect(...)
+    return pcall(sock:connect(...))
 end
 
 
